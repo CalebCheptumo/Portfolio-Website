@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Raleway:wght@100;300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -16,4 +18,22 @@
     --color-primary-variant:#848191;
     --color-white:#fffefe;
     --color-light:#f4f4f5;
+
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-ms: 90%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
