@@ -16,3 +16,30 @@ header {
     gap: 1.2rem;
     justify-content: center;
 }
+
+
+.me {
+    background: linear-gradient(
+    var(--color-primary) , transparent);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 10rem 10rem 0 0;
+    overflow: hidden;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 68vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+    
+}
