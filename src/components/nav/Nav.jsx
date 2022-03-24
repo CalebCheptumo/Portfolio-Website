@@ -10,7 +10,7 @@ import {BiMessageRounded} from 'react-icons/bi'
 const Nav = () => {
   return (
     <nav>
-      <a href="#"><FaHome/></a>
+      <a href="#" className='active'><FaHome/></a>
       <a href="#about"><FaUser/></a>
       <a href="#portfolio"><AiOutlineFundProjectionScreen/></a>
       <a href="#contact"><BiMessageRounded/></a>
