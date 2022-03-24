@@ -12,9 +12,10 @@ const header = () => {
                <h1>Caleb Cheptumo</h1>
                <h5 className = "text-light">Web developer</h5>
                <CTA />
-
+               
                <div className="me">
-                   <img src= {ME} alt="Caleb cheptumo" />
+                   
+                   <img src= {ME} alt="Caleb cheptumo"  />
                </div>
            </div>
 
