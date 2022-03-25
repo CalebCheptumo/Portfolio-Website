@@ -15,8 +15,11 @@ const portfolio = () => {
                          <img src={IMG1} alt="" />
                      </div>
                      <h3>Tracking Tool</h3>
+                     <p>Tool to report expected and unexpected errors on website</p>
+                     <div className="portfolio__item-cta">
                      <a href="" className='btn btn-primary' target='_blank'>View Live</a>
                      <a href="https://github.com" className='btn' target='_blank'>Github Repo</a>
+                     </div>
                      
                  </article>
                  <article className='portfolio__item'>
@@ -24,8 +27,10 @@ const portfolio = () => {
                          <img src={IMG2} alt="" />
                      </div>
                      <h3>UI KIT</h3>
+                     <div className="portfolio__item-cta">
                      <a href="" className='btn btn-primary' target='_blank'>View Live</a>
                      <a href="https://github.com" className='btn' target='_blank'>Github Repo</a>
+                     </div>
                      
                  </article>
                  <article className='portfolio__item'>
@@ -33,8 +38,10 @@ const portfolio = () => {
                          <img src={IMG3} alt="" />
                      </div>
                      <h3>ANALYSIS TOOL</h3>
+                     <div className="portfolio__item-cta">
                      <a href="" className='btn btn-primary' target='_blank'>View Live</a>
                      <a href="https://github.com" className='btn' target='_blank'>Github Repo</a>
+                     </div>
                      
                  </article>
             </div>
