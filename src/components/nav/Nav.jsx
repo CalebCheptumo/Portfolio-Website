@@ -1,53 +1,23 @@
-import React, { useState } from "react";
-import "./nav.css";
+import React from 'react'
+import './nav.css'
+import {FaHome} from 'react-icons/fa'
+import {FaUser} from 'react-icons/fa'
+import {AiOutlineFundProjectionScreen} from 'react-icons/ai'
+import {BiMessageRounded} from 'react-icons/bi'
+import { useState } from 'react'
 
-function Navbar() {
-  const [active, setActive] = useState("nav__menu");
-  const [icon, setIcon] = useState("nav__toggler");
-  const navToggle = () => {
-    if (active === "nav__menu") {
-      setActive("nav__menu nav__active");
-    } else setActive("nav__menu");
 
-    // Icon Toggler
-    if (icon === "nav__toggler") {
-      setIcon("nav__toggler toggle");
-    } else setIcon("nav__toggler");
-  };
+
+const Nav = () => {
+  const [activeNav, setActiveNav] = useState('#')
   return (
-    <nav className="nav">
-      <a href="#" className="nav__brand">
-        Caleb Cheptumo
-      </a>
-      <ul className={active}>
-        <li className="nav__item">
-          <a href="#" className="nav__link">
-            Home
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="#" className="nav__link">
-            About me
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="#" className="nav__link">
-            Projects
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="#" className="nav__link">
-            Contact
-          </a>
-        </li>
-      </ul>
-      <div onClick={navToggle} className={icon}>
-        <div className="line1"></div>
-        <div className="line2"></div>
-        <div className="line3"></div>
-      </div>
+    <nav>
+      <a href="#" onClick={() => setActiveNav('#')} className={activeNav  === '#' ? 'active' : ''} ><FaHome/></a>
+      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav  === '#about' ? 'active' : ''}><FaUser/></a>
+      <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav  === '#portfolio' ? 'active' : ''}><AiOutlineFundProjectionScreen/></a>
+      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav  === '#contact' ? 'active' : ''}><BiMessageRounded/></a>
     </nav>
-  );
+  ) 
 }
 
-export default Navbar;
+export default Nav
