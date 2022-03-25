@@ -4,11 +4,12 @@ import {SiGmail} from 'react-icons/si'
 import {BsWhatsapp} from 'react-icons/bs'
 
 
-const contact = () => {
+const Contact = () => {
     return (
         <section id='contact'>
             <h5>Satisfied with me? Please contact me</h5>
             <h2>Connect with me:</h2>
+
             <div className='container contact__container'>
                 <div className="contact__options">
                     <article className='contact__option'>
@@ -20,8 +21,8 @@ const contact = () => {
                     <article className='contact__option'>
                         <BsWhatsapp className='contact__option-icon'/>
                         <h4>Whatsapp</h4>
-                        <h5>+0719450250</h5>
-                        <a href="https://api.whatsapp.com/send?phone+254719450250" target='_blank'>Whatsapp</a>
+                        <h5>0719450250</h5>
+                        <a href="https://api.whatsapp.com/send?phone=+254719450250" target='_blank'>Whatsapp</a>
                     </article>
                 </div>
                <form action="">
@@ -35,4 +36,4 @@ const contact = () => {
     )
 }
 
-export default contact
+export default Contact
