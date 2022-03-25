@@ -1,5 +1,6 @@
 {
   "name": "portfolio-website",
+  "homepage" : "https://calebcheptumo.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
